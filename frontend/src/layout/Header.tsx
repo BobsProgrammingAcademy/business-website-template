@@ -101,7 +101,7 @@ const Header = ({ onSidebarOpen }: Props): JSX.Element => {
               display: { lg: 'flex', md: 'none', xs: 'none' }
             }}
           />
-          <Box sx={{ display: { lg: 'flex', md: 'none', xs: 'none' } }}>
+          <Box sx={{ display: 'flex' }}>
             <IconButton
               onClick={colorMode.toggleColorMode}
               aria-label='Theme Mode'
