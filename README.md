@@ -1,6 +1,6 @@
 # Business Website Template
 
-This is a business website template for a company built using **React 18 (with TypeScript 4)**, **Material UI 5**, and **Django 4**.
+This is a business website template for a company built using **React 18 (with TypeScript 4)**, **Material UI 5**, **Django 4** and **Django REST Framework 3**.
 
 ### Dark mode:
 
