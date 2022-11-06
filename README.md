@@ -17,6 +17,7 @@ This is a business website template for a company built using **React 18 (with T
 - [Running the application](#run-the-application)
 - [Adding data to the application](#add-data-to-the-application)
 - [Customizing the application](#customize-the-application)
+- [Copyright and License](#copyright-and-license)
 
 
 ## Prerequisites
