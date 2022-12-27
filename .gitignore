@@ -2,6 +2,7 @@
 .DS_Store
 .next/
 db.sqlite3
+package-lock.json
 media/
 node_modules/ 
 venv/
