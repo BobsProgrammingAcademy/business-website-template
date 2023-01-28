@@ -171,6 +171,11 @@ To modify the fonts in the application, first, add a new font to the ```frontend
 
 To modify the logo in the application, make changes in the ```frontend/src/layout/Header.tsx``` and ```frontend/src/layout/Sidebar.tsx``` files.
 
+### Changing Buttons in the Hero Section
+
+To modify the two buttons in the Hero section, make changes in the ```frontend/src/components/HeroButtons.js``` file.
+
+
 ## Copyright and License
 
 Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
