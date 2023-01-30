@@ -173,7 +173,7 @@ To modify the logo in the application, make changes in the ```frontend/src/layou
 
 ### Changing Buttons in the Hero Section
 
-To modify the two buttons in the Hero section, make changes in the ```frontend/src/components/HeroButtons.js``` file.
+To modify the two buttons in the Hero section, make changes in the ```frontend/src/components/HeroButtons.tsx``` file.
 
 
 ## Copyright and License
