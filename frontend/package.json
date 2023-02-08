@@ -1,6 +1,9 @@
 {
   "name": "business-website",
   "version": "0.1.0",
+  "description": "Business Website",
+  "author": "MG",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
