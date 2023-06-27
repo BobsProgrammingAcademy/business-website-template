@@ -8,5 +8,6 @@ class ProjectAdmin(admin.ModelAdmin):
   search_fields = ('title', 'features')
   list_per_page = 20
 
+
 admin.site.register(Pricing)
 admin.site.register(Feature)

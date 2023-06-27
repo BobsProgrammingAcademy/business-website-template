@@ -8,4 +8,5 @@ class ProductAdmin(admin.ModelAdmin):
   search_fields = ('name', 'description')
   list_per_page = 20
 
+
 admin.site.register(Product, ProductAdmin)

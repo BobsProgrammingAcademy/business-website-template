@@ -3,6 +3,6 @@ from .models import About
 
 
 class AboutSerializer(serializers.ModelSerializer):
-	class Meta:
-		model = About
-		fields = '__all__'
+  class Meta:
+    model = About
+    fields = '__all__'
