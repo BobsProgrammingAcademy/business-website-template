@@ -21,10 +21,16 @@ const CustomButton = ({ href, text }: Props): JSX.Element => {
         mx: 1.5,
         marginLeft: '15px',
         '&:active': {
-          color: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+          color:
+            theme.palette.mode === 'dark'
+              ? theme.palette.primary.main
+              : theme.palette.success.dark,
         },
         '&:hover': {
-          color: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+          color:
+            theme.palette.mode === 'dark'
+              ? theme.palette.primary.main
+              : theme.palette.success.dark,
         },
       }}
     >

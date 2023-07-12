@@ -1,6 +1,7 @@
 *.pyc
 .DS_Store
 .next/
+.vscode
 db.sqlite3
 media/
 node_modules/ 

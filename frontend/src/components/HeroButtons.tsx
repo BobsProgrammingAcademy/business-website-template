@@ -8,11 +8,10 @@ import PlayIcon from '@mui/icons-material/PlayCircleOutline';
 
 const HeroButtons = (): JSX.Element => {
   const theme = useTheme();
-  const isMd = useMediaQuery(
-    theme.breakpoints.up('md'),
-    { defaultMatches: true }
-  );
-  
+  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+    defaultMatches: true,
+  });
+
   return (
     <>
       <Box
@@ -30,20 +29,35 @@ const HeroButtons = (): JSX.Element => {
           endIcon={<ArrowForwardIcon />}
           disableElevation={true}
           sx={{
-            color: theme.palette.mode === 'dark' ? theme.palette.common.black : theme.palette.common.white,
-            bgcolor: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+            color:
+              theme.palette.mode === 'dark'
+                ? theme.palette.common.black
+                : theme.palette.common.white,
+            bgcolor:
+              theme.palette.mode === 'dark'
+                ? theme.palette.primary.main
+                : theme.palette.success.dark,
             padding: '15px 30px',
             marginRight: '15px',
             fontSize: '16px',
             textTransform: 'uppercase',
             border: '2px solid',
-            borderColor: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+            borderColor:
+              theme.palette.mode === 'dark'
+                ? theme.palette.primary.main
+                : theme.palette.success.dark,
             '&:hover': {
               backgroundColor: 'transparent',
-              color: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+              color:
+                theme.palette.mode === 'dark'
+                  ? theme.palette.primary.main
+                  : theme.palette.success.dark,
               border: '2px solid',
-              borderColor: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
-            }
+              borderColor:
+                theme.palette.mode === 'dark'
+                  ? theme.palette.primary.main
+                  : theme.palette.success.dark,
+            },
           }}
         >
           Learn More
@@ -61,21 +75,36 @@ const HeroButtons = (): JSX.Element => {
             endIcon={<PlayIcon />}
             disableElevation={true}
             sx={{
-              color: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+              color:
+                theme.palette.mode === 'dark'
+                  ? theme.palette.primary.main
+                  : theme.palette.success.dark,
               padding: '15px 30px',
               marginRight: '15px',
               fontSize: '16px',
               textTransform: 'uppercase',
               border: '2px solid',
-              borderColor: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+              borderColor:
+                theme.palette.mode === 'dark'
+                  ? theme.palette.primary.main
+                  : theme.palette.success.dark,
               whiteSpace: 'nowrap',
               minWidth: 'auto',
               '&:hover': {
-                backgroundColor: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
-                color: theme.palette.mode === 'dark' ? theme.palette.common.black : theme.palette.common.white,
+                backgroundColor:
+                  theme.palette.mode === 'dark'
+                    ? theme.palette.primary.main
+                    : theme.palette.success.dark,
+                color:
+                  theme.palette.mode === 'dark'
+                    ? theme.palette.common.black
+                    : theme.palette.common.white,
                 border: '2px solid',
-                borderColor: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
-              }
+                borderColor:
+                  theme.palette.mode === 'dark'
+                    ? theme.palette.primary.main
+                    : theme.palette.success.dark,
+              },
             }}
           >
             Watch Demo

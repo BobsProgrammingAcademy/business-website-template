@@ -9,7 +9,7 @@ import Contact from '../components/Contact';
 
 const Home = (): JSX.Element => {
   return (
-    <div id="home">
+    <div id='home'>
       <Hero />
       <Products />
       <Services />

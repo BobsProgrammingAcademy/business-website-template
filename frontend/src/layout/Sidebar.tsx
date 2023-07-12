@@ -16,7 +16,7 @@ interface Props {
 
 const Sidebar = ({ open, onClose }: Props): JSX.Element => {
   const theme = useTheme();
-  
+
   return (
     <>
       <Drawer
@@ -27,30 +27,33 @@ const Sidebar = ({ open, onClose }: Props): JSX.Element => {
         PaperProps={{
           sx: {
             backgroundColor: theme.palette.background.default,
-            width: 256
-          }
+            width: 256,
+          },
         }}
       >
         <Box height='100%'>
           <Box width={1}>
             <Link to='/' style={{ textDecoration: 'none' }}>
               <IconButton size='large' disabled>
-                <StormIcon 
-                  sx={{ 
-                    color: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
-                    height: 40, 
-                    width: 40 
-                  }} 
+                <StormIcon
+                  sx={{
+                    color:
+                      theme.palette.mode === 'dark'
+                        ? theme.palette.primary.main
+                        : theme.palette.success.dark,
+                    height: 40,
+                    width: 40,
+                  }}
                 />
-                <Typography 
+                <Typography
                   variant='h6'
-                  sx={{ 
+                  sx={{
                     flexGrow: 1,
                     color: theme.palette.text.primary,
                     fontWeight: 'bold',
                     textTransform: 'uppercase',
                     textDecoration: 'none',
-                    marginLeft: 1
+                    marginLeft: 1,
                   }}
                 >
                   Bob's Company
@@ -60,33 +63,18 @@ const Sidebar = ({ open, onClose }: Props): JSX.Element => {
           </Box>
           <Box padding={2}>
             <Box paddingY={2}>
-              <CustomButton 
-                href='#products'
-                text='Products'
-              />
+              <CustomButton href='#products' text='Products' />
               <Box paddingY={1}>
-                <CustomButton 
-                  href='#services'
-                  text='Services'
-                />
+                <CustomButton href='#services' text='Services' />
               </Box>
               <Box paddingY={1}>
-                <CustomButton 
-                  href='#pricing'
-                  text='Pricing'
-                />
+                <CustomButton href='#pricing' text='Pricing' />
               </Box>
               <Box paddingY={1}>
-                <CustomButton 
-                  href='#about'
-                  text='About'
-                />
+                <CustomButton href='#about' text='About' />
               </Box>
               <Box paddingY={1}>
-                <CustomButton 
-                  href='#contact'
-                  text='Contact'
-                />
+                <CustomButton href='#contact' text='Contact' />
               </Box>
             </Box>
           </Box>

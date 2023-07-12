@@ -45,7 +45,7 @@ const getTheme = (mode: string): Theme =>
           } as ComponentsOverrides['MuiCard'],
         },
       },
-    }),
+    })
   );
 
 export default getTheme;

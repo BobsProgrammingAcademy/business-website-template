@@ -19,17 +19,18 @@ const Hero = (): JSX.Element => {
   const [hero, setHero] = useState<HeroProps[]>([]);
 
   const fetchHero = () => {
-    axios.get<HeroProps[]>('http://127.0.0.1:8000/hero', {
-      headers: {
-        'Accept': 'application/json',
-      }
-    })
-    .then(response => {
-      setHero(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get<HeroProps[]>('http://127.0.0.1:8000/hero', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then((response) => {
+        setHero(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchHero();
   }, []);
@@ -79,7 +80,7 @@ const Hero = (): JSX.Element => {
         ))}
       </Box>
       <Spacer sx={{ pt: 6 }} />
-    </div> 
+    </div>
   );
 };
 

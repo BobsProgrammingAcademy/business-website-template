@@ -8,14 +8,14 @@ interface Props {
 
 const Spacer = ({ sx = [] }: Props): JSX.Element => {
   const theme = useTheme();
-  
+
   return (
     <Box
       sx={[
         {
-          backgroundColor: theme.palette.background.default
+          backgroundColor: theme.palette.background.default,
         },
-        ...[sx]
+        ...[sx],
       ]}
     ></Box>
   );

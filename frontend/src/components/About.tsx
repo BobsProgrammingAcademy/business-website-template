@@ -19,7 +19,9 @@ interface AboutProps {
 const About = (): JSX.Element => {
   const theme = useTheme();
   const [viewPortEntered, setViewPortEntered] = useState(false);
-  const setViewPortVisibility = (isVisible: boolean | ((prevState: boolean) => boolean)) => {
+  const setViewPortVisibility = (
+    isVisible: boolean | ((prevState: boolean) => boolean)
+  ) => {
     if (viewPortEntered) {
       return;
     }
@@ -27,19 +29,20 @@ const About = (): JSX.Element => {
   };
 
   const [about, setAbout] = useState<AboutProps[]>([]);
-  
+
   const fetchAbout = () => {
-    axios.get<AboutProps[]>('http://127.0.0.1:8000/about', {
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      setAbout(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get<AboutProps[]>('http://127.0.0.1:8000/about', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then((response) => {
+        setAbout(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchAbout();
   }, []);
@@ -76,7 +79,8 @@ const About = (): JSX.Element => {
             marginTop={theme.spacing(1)}
             gutterBottom
           >
-            We help software developers learn new skills, gain more experience and create excellent applications
+            We help software developers learn new skills, gain more experience
+            and create excellent applications
           </Typography>
         </Box>
         <Container>
@@ -101,20 +105,22 @@ const About = (): JSX.Element => {
                       flexDirection='column'
                       alignItems='center'
                     >
-                      <Typography 
-                        variant='h4' 
-                        color='primary'
-                        gutterBottom
-                      >
-                        <Box 
+                      <Typography variant='h4' color='primary' gutterBottom>
+                        <Box
                           fontWeight={600}
                           sx={{
-                            color: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+                            color:
+                              theme.palette.mode === 'dark'
+                                ? theme.palette.primary.main
+                                : theme.palette.success.dark,
                           }}
                         >
                           <VisibilitySensor
-                            onChange={(isVisible: boolean | ((prevState: boolean) => boolean)) => 
-                              setViewPortVisibility(isVisible)}
+                            onChange={(
+                              isVisible:
+                                | boolean
+                                | ((prevState: boolean) => boolean)
+                            ) => setViewPortVisibility(isVisible)}
                             delayedCall
                           >
                             <CountUp
@@ -126,15 +132,15 @@ const About = (): JSX.Element => {
                           </VisibilitySensor>
                         </Box>
                       </Typography>
-                      <Typography 
+                      <Typography
                         component='p'
                         color={theme.palette.text.secondary}
                       >
                         {item.description}
                       </Typography>
                     </Box>
-                  </CardContent>  
-                </Box>        
+                  </CardContent>
+                </Box>
               </Grid>
             ))}
           </Grid>

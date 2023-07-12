@@ -21,17 +21,18 @@ const Services = (): JSX.Element => {
   const [services, setServices] = useState<ServicesProps[]>([]);
 
   const fetchServices = () => {
-    axios.get<ServicesProps[]>('http://127.0.0.1:8000/services', {
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      setServices(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get<ServicesProps[]>('http://127.0.0.1:8000/services', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then((response) => {
+        setServices(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchServices();
   }, []);
@@ -81,7 +82,11 @@ const Services = (): JSX.Element => {
                       width={50}
                       height={50}
                       marginBottom={2}
-                      bgcolor={theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark}
+                      bgcolor={
+                        theme.palette.mode === 'dark'
+                          ? theme.palette.primary.main
+                          : theme.palette.success.dark
+                      }
                       color={theme.palette.background.paper}
                     >
                       <Icon className='material-icons-outlined'>

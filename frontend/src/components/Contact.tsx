@@ -25,19 +25,20 @@ const Contact = (): JSX.Element => {
   const theme = useTheme();
 
   const [contact, setContact] = useState<ContactProps[]>([]);
-  
+
   const fetchContact = () => {
-    axios.get<ContactProps[]>('http://127.0.0.1:8000/contact', {
-      headers: {
-        'Accept': 'application/json',
-      }
-    })
-    .then(response => {
-      setContact(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get<ContactProps[]>('http://127.0.0.1:8000/contact', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then((response) => {
+        setContact(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchContact();
   }, []);
@@ -80,14 +81,17 @@ const Contact = (): JSX.Element => {
           <Container key={i}>
             <Grid container spacing={4}>
               <Grid item xs={12} md={6}>
-                <Box 
-                  sx={{ 
-                    filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'brightness(0.9)'
+                <Box
+                  sx={{
+                    filter:
+                      theme.palette.mode === 'dark'
+                        ? 'brightness(0.7)'
+                        : 'brightness(0.9)',
                   }}
                 >
-                  <Map 
-                    coordinates={[item.latitude, item.longitude]} 
-                    zoom={13} 
+                  <Map
+                    coordinates={[item.latitude, item.longitude]}
+                    zoom={13}
                   />
                 </Box>
               </Grid>
@@ -109,11 +113,14 @@ const Contact = (): JSX.Element => {
                   >
                     <PhoneIcon
                       sx={{
-                        color: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+                        color:
+                          theme.palette.mode === 'dark'
+                            ? theme.palette.primary.main
+                            : theme.palette.success.dark,
                         width: 25,
                         height: 25,
-                        marginRight: 1
-                      }} 
+                        marginRight: 1,
+                      }}
                     />
                     <ListItemText primary={item.phone} />
                   </Box>
@@ -125,13 +132,16 @@ const Contact = (): JSX.Element => {
                     marginLeft={5}
                     marginBottom={2}
                   >
-                    <EmailIcon 
+                    <EmailIcon
                       sx={{
-                        color: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+                        color:
+                          theme.palette.mode === 'dark'
+                            ? theme.palette.primary.main
+                            : theme.palette.success.dark,
                         width: 25,
                         height: 25,
-                        marginRight: 1
-                      }}  
+                        marginRight: 1,
+                      }}
                     />
                     <ListItemText primary={item.email} />
                   </Box>
@@ -143,13 +153,16 @@ const Contact = (): JSX.Element => {
                     marginBottom={1}
                     disableGutters
                   >
-                    <LocationIcon 
+                    <LocationIcon
                       sx={{
-                        color: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark,
+                        color:
+                          theme.palette.mode === 'dark'
+                            ? theme.palette.primary.main
+                            : theme.palette.success.dark,
                         width: 25,
                         height: 25,
-                        marginRight: 1
-                      }} 
+                        marginRight: 1,
+                      }}
                     />
                     <ListItemText primary={item.address} />
                   </Box>

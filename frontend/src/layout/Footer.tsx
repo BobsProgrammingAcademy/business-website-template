@@ -13,19 +13,20 @@ const Footer = (): JSX.Element => {
   const theme = useTheme();
 
   const [footer, setFooter] = useState<FooterProps[]>([]);
-  
+
   const fetchFooter = () => {
-    axios.get<FooterProps[]>('http://127.0.0.1:8000/footer', {
-      headers: {
-        'Accept': 'application/json',
-      }
-    })
-    .then(response => {
-      setFooter(response.data);
-    })
-    .catch(error => console.log(error));
+    axios
+      .get<FooterProps[]>('http://127.0.0.1:8000/footer', {
+        headers: {
+          Accept: 'application/json',
+        },
+      })
+      .then((response) => {
+        setFooter(response.data);
+      })
+      .catch((error) => console.log(error));
   };
-  
+
   useEffect(() => {
     fetchFooter();
   }, []);

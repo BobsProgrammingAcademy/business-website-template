@@ -11,24 +11,25 @@ interface Props {
 const Map = ({ coordinates, zoom }: Props): JSX.Element => {
   const theme = useTheme();
   const position: LatLngExpression = coordinates;
-  const fillBlueOptions = { fillColor: theme.palette.mode === 'dark' ? theme.palette.primary.main : theme.palette.success.dark };
-  
+  const fillBlueOptions = {
+    fillColor:
+      theme.palette.mode === 'dark'
+        ? theme.palette.primary.main
+        : theme.palette.success.dark,
+  };
+
   return (
-    <MapContainer 
-      center={position} 
-      zoom={zoom} 
+    <MapContainer
+      center={position}
+      zoom={zoom}
       scrollWheelZoom={false}
       style={{ height: '400px', width: '100%' }}
     >
       <TileLayer
         attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
       />
-      <Circle 
-        center={position} 
-        pathOptions={fillBlueOptions} 
-        radius={50} 
-      />
+      <Circle center={position} pathOptions={fillBlueOptions} radius={50} />
     </MapContainer>
   );
 };

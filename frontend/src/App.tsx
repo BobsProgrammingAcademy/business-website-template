@@ -9,17 +9,20 @@ import ColorModeContext from './utils/ColorModeContext';
 import Layout from './layout/Layout';
 import Home from './pages/Home';
 
-const App = (): JSX.Element => {  
+const App = (): JSX.Element => {
   const [mode, setMode] = useState('dark');
   const colorMode = useMemo(
     () => ({
       // The theme mode switch will invoke this method
       toggleColorMode: () => {
-        window.localStorage.setItem('themeMode', mode === 'dark' ? 'light' : 'dark');
+        window.localStorage.setItem(
+          'themeMode',
+          mode === 'dark' ? 'light' : 'dark'
+        );
         setMode((prevMode) => (prevMode === 'dark' ? 'light' : 'dark'));
       },
     }),
-    [mode],
+    [mode]
   );
 
   useEffect(() => {
@@ -33,7 +36,7 @@ const App = (): JSX.Element => {
 
   return (
     <HelmetProvider>
-      <Helmet 
+      <Helmet
         titleTemplate="%s | Bob's Programming Academy"
         defaultTitle="Bob's Programming Academy"
       />
