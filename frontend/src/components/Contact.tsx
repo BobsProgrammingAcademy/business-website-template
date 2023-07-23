@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Box from '@mui/material/Box';
 import axios from 'axios';
 import Container from '@mui/material/Container';
