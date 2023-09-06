@@ -24,7 +24,8 @@ This is a business website template for a company built using **React 18 (with T
 
 Install the following prerequisites:
 
-1. [Python 3.10.8 or higher](https://www.python.org/downloads/)
+1. [Python 3.8-3.11](https://www.python.org/downloads/)
+<br> This project uses **Django v4.2.4**. For Django to work, you must have a correct Python version installed on your machine. More information [here](https://django.readthedocs.io/en/stable/faq/install.html).
 2. [Node.js 18.11.0 or higher](https://nodejs.org/en/)
 3. [Visual Studio Code](https://code.visualstudio.com/download)
 
