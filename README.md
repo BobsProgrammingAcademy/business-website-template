@@ -15,6 +15,7 @@ This is a business website template for a company built using **React 18** (with
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Running the application](#run-the-application)
+- [Running the tests](#run-the-tests)
 - [Adding data to the application](#add-data-to-the-application)
 - [Customizing the application](#customize-the-application)
 - [Copyright and License](#copyright-and-license)
@@ -103,6 +104,7 @@ cd frontend
 npm install
 ```
 
+
 ### Run the application
 
 To run the application, you need to have both the backend and the frontend up and running.
@@ -126,6 +128,19 @@ npm start
 #### 3. View the application
 
 Go to http://localhost:3000/ to view the application.
+
+
+### Run the tests
+
+#### 1. Run the backend tests
+
+From the **backend** directory, run:
+
+```bash
+python manage.py test --pattern="tests.py"
+
+```
+
 
 ### Add data to the application
 
@@ -174,6 +189,7 @@ To modify the logo in the application, make changes in the ```frontend/src/layou
 #### Changing Buttons in the Hero Section
 
 To modify the two buttons in the Hero section, make changes in the ```frontend/src/components/HeroButtons.tsx``` file.
+
 
 ### Copyright and License
 
