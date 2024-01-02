@@ -8,7 +8,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --runInBand",
+    "test:coverage": "jest --runInBand --coverage",
+    "clear_jest": "jest --clearCache",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
