@@ -19,6 +19,13 @@
     "format:fix": "npm run prettier -- --write",
     "types:check": "bash -c tsc --noEmit --pretty"
   },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npm run lint",
+      "npm run types:check",
+      "npm run format:check"
+    ]
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
