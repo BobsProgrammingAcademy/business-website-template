@@ -91,6 +91,7 @@ python manage.py createsuperuser
 
 When prompted, enter a username, email, and password.
 
+
 #### Frontend
 
 #### 1. Install required frontend dependencies
@@ -139,6 +140,15 @@ From the **backend** directory, run:
 ```bash
 python manage.py test --pattern="tests.py"
 
+```
+
+
+#### 2. Run the frontend tests
+
+From the **frontend** directory, run:
+
+```bash
+npm run test
 ```
 
 
