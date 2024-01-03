@@ -12,6 +12,8 @@
     "test": "jest --runInBand",
     "test:coverage": "jest --runInBand --coverage",
     "clear_jest": "jest --clearCache",
+    "lint": "eslint --ext .ts,.tsx ./src",
+    "lint:fix": "eslint --ext .ts,.tsx ./src",
     "prettier": "prettier \"**/*.+(json|ts|tsx)\"",
     "format:check": "npm run prettier -- --check",
     "format:fix": "npm run prettier -- --write",
