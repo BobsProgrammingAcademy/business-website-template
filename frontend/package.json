@@ -8,10 +8,14 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "eject": "react-scripts eject",
     "test": "jest --runInBand",
     "test:coverage": "jest --runInBand --coverage",
     "clear_jest": "jest --clearCache",
-    "eject": "react-scripts eject"
+    "prettier": "prettier \"**/*.+(json|ts|tsx)\"",
+    "format:check": "npm run prettier -- --check",
+    "format:fix": "npm run prettier -- --write",
+    "types:check": "bash -c tsc --noEmit --pretty"
   },
   "eslintConfig": {
     "extends": [
