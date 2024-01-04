@@ -40,8 +40,8 @@ const Products = (): JSX.Element => {
     <div id='products'>
       <Box
         sx={{
-          pt: 5,
-          pb: 10,
+          paddingTop: 5,
+          paddingBottom: 10,
           px: 2,
           backgroundColor: theme.palette.background.default,
         }}
@@ -126,7 +126,7 @@ const Products = (): JSX.Element => {
                             theme.palette.mode === 'dark'
                               ? 'brightness(0.7)'
                               : 'brightness(0.9)',
-                          mt: 4,
+                          marginTop: 4,
                         }}
                       ></CardMedia>
                     </Card>

@@ -44,8 +44,8 @@ const Pricing = (): JSX.Element => {
     <div id='pricing'>
       <Box
         sx={{
-          pt: 5,
-          pb: 10,
+          paddingTop: 5,
+          paddingBottom: 10,
           px: 2,
           backgroundColor: theme.palette.background.default,
         }}
