@@ -51,8 +51,8 @@ const About = (): JSX.Element => {
     <div id='about'>
       <Box
         sx={{
-          pt: 5,
-          pb: 12,
+          paddingTop: 5,
+          paddingBottom: 12,
           px: 2,
           backgroundColor: theme.palette.background.default,
         }}
@@ -67,7 +67,7 @@ const About = (): JSX.Element => {
             gutterBottom
             sx={{
               textTransform: 'uppercase',
-              mb: 2,
+              marginBottom: 2,
             }}
           >
             About
