@@ -18,7 +18,7 @@ const CustomButton = ({ href, text }: Props): JSX.Element => {
       sx={{
         color: theme.palette.text.primary,
         textTransform: 'uppercase',
-        mx: 1.5,
+        marginX: 1.5,
         marginLeft: '15px',
         '&:active': {
           color:
