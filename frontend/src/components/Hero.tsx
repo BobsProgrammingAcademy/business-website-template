@@ -39,8 +39,8 @@ const Hero = (): JSX.Element => {
     <div id='home'>
       <Box
         sx={{
-          py: 10,
-          px: 2,
+          paddingY: 10,
+          paddingX: 2,
           backgroundColor: theme.palette.background.paper,
         }}
       >
