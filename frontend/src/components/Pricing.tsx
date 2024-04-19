@@ -46,7 +46,7 @@ const Pricing = (): JSX.Element => {
         sx={{
           paddingTop: 5,
           paddingBottom: 10,
-          px: 2,
+          paddingX: 2,
           backgroundColor: theme.palette.background.default,
         }}
       >
