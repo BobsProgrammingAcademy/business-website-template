@@ -128,7 +128,7 @@ const Products = (): JSX.Element => {
                               : 'brightness(0.9)',
                           marginTop: 4,
                         }}
-                      ></CardMedia>
+                      />
                     </Card>
                   </Box>
                 </Box>
