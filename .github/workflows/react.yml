@@ -15,7 +15,8 @@ jobs:
         os: [macos-latest, ubuntu-latest, windows-latest]
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout source Git branch
+        uses: actions/checkout@v4
       
       - name: Install Dependencies
         run: |
