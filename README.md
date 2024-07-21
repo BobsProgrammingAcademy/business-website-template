@@ -10,7 +10,6 @@ This is a business website template for a company built using **React 18** (with
 
 ![plot](https://github.com/BobsProgrammingAcademy/business-website-template/blob/master/frontend/public/images/light_theme.png?raw=true)
 
-
 ## Table of Contents 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
@@ -19,7 +18,6 @@ This is a business website template for a company built using **React 18** (with
 - [Adding data to the application](#add-data-to-the-application)
 - [Customizing the application](#customize-the-application)
 - [Copyright and License](#copyright-and-license)
-
 
 ## Prerequisites
 
@@ -30,10 +28,9 @@ Install the following prerequisites:
 2. [Node.js](https://nodejs.org/en/)
 3. [Visual Studio Code](https://code.visualstudio.com/download)
 
+## Installation
 
-### Installation
-
-#### Backend
+### Backend
 
 #### 1. Create a virtual environment
 
@@ -91,8 +88,7 @@ python manage.py createsuperuser
 
 When prompted, enter a username, email, and password.
 
-
-#### Frontend
+### Frontend
 
 #### 1. Install required frontend dependencies
 
@@ -105,12 +101,11 @@ cd frontend
 npm install
 ```
 
-
-### Run the application
+## Run the application
 
 To run the application, you need to have both the backend and the frontend up and running.
 
-#### 1. Run backend
+### 1. Run backend
 
 From the **backend** directory, run:
 
@@ -118,7 +113,7 @@ From the **backend** directory, run:
 python manage.py runserver
 ```
 
-#### 2. Run frontend
+### 2. Run frontend
 
 From the **frontend** directory, run:
 
@@ -126,14 +121,13 @@ From the **frontend** directory, run:
 npm start
 ```
 
-#### 3. View the application
+### 3. View the application
 
 Go to http://localhost:3000/ to view the application.
 
+## Run the tests
 
-### Run the tests
-
-#### 1. Run the backend tests
+### 1. Run the backend tests
 
 From the **backend** directory, run:
 
@@ -142,8 +136,7 @@ python manage.py test --pattern="tests.py"
 
 ```
 
-
-#### 2. Run the frontend tests
+### 2. Run the frontend tests
 
 From the **frontend** directory, run:
 
@@ -151,18 +144,17 @@ From the **frontend** directory, run:
 npm run test
 ```
 
-
-### Add data to the application
+## Add data to the application
 
 Add data through Django Admin.
 
 Go to http://127.0.0.1:8000/admin to access the Django Admin interface and sign in using the admin credentials.
 
-### Customize the application
+## Customize the application
 
 This section describes how to customize the application. 
 
-#### Changing Section Titles and Subtitles 
+### Changing Section Titles and Subtitles 
 
 #### 1. Products
 
@@ -184,23 +176,22 @@ To modify the title and subtitle of the **About** section, make changes in the `
 
 To modify the title and subtitle of the **Contact** section, make changes in the ```frontend/src/components/Contact.tsx``` file.
 
-#### Changing Colors
+### Changing Colors
 
 To modify the colors in the application, make changes in the ```frontend/src/theme/palette.ts``` file.
 
-#### Changing Fonts
+### Changing Fonts
 
 To modify the fonts in the application, first, add a new font to the ```frontend/public/index.html``` file, and then make changes in the ```frontend/src/theme/theme.ts``` file.
 
-#### Changing Logo
+### Changing Logo
 
 To modify the logo in the application, make changes in the ```frontend/src/layout/Header.tsx``` and ```frontend/src/layout/Sidebar.tsx``` files.
 
-#### Changing Buttons in the Hero Section
+### Changing Buttons in the Hero Section
 
 To modify the two buttons in the Hero section, make changes in the ```frontend/src/components/HeroButtons.tsx``` file.
 
-
-### Copyright and License
+## Copyright and License
 
 Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
