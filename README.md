@@ -2,11 +2,11 @@
 
 This is a business website template for a company built using **React 18** (with **TypeScript 4**), **Material UI 5**, **Django 4**, and **Django REST Framework 3**.
 
-### Dark mode:
+## Dark mode:
 
 ![plot](https://github.com/BobsProgrammingAcademy/business-website-template/blob/master/frontend/public/images/dark_theme.png?raw=true)
 
-### Light mode:
+## Light mode:
 
 ![plot](https://github.com/BobsProgrammingAcademy/business-website-template/blob/master/frontend/public/images/light_theme.png?raw=true)
 
@@ -21,7 +21,7 @@ This is a business website template for a company built using **React 18** (with
 - [Copyright and License](#copyright-and-license)
 
 
-### Prerequisites
+## Prerequisites
 
 Install the following prerequisites:
 
