@@ -121,7 +121,7 @@ From the **frontend** directory, run:
 npm start
 ```
 
-### 3. View the application
+## View the application
 
 Go to http://localhost:3000/ to view the application.
 
