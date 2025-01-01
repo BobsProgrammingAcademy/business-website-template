@@ -8,11 +8,13 @@ import Link from '@mui/material/Link';
 import Toolbar from '@mui/material/Toolbar';
 import Tooltip from '@mui/material/Tooltip';
 import Typography from '@mui/material/Typography';
+import { alpha, useTheme } from '@mui/material/styles';
+
+// Material Icons
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import StormIcon from '@mui/icons-material/Storm';
 import MenuIcon from '@mui/icons-material/Menu';
-import { alpha, useTheme } from '@mui/material/styles';
 
 import CustomButton from '../components/CustomButton';
 import ColorModeContext from '../utils/ColorModeContext';
