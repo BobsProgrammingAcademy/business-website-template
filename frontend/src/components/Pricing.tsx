@@ -8,8 +8,10 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTheme } from '@mui/material/styles';
+
+// Material Icons
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 interface PricingProps {
   title: string;
