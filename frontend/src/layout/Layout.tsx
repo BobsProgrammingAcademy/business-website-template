@@ -5,8 +5,10 @@ import NoSsr from '@mui/material/NoSsr';
 import Zoom from '@mui/material/Zoom';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { useTheme } from '@mui/material/styles';
+
+// Material Icons
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import Header from './Header';
 import Footer from './Footer';
