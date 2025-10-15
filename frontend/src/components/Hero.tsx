@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { useTheme } from '@mui/material/styles';
 
+// Components
 import HeroButtons from './HeroButtons';
 import Spacer from './Spacer';
 
