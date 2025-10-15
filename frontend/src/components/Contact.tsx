@@ -15,6 +15,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import LocationIcon from '@mui/icons-material/LocationOn';
 import PhoneIcon from '@mui/icons-material/Phone';
 
+// Components
 import Map from './Map';
 
 interface ContactProps {
