@@ -7,8 +7,8 @@ import CssBaseline from '@mui/material/CssBaseline';
 // Components
 import Layout from './layout/Layout';
 import Home from './pages/Home';
-import getTheme from './theme/theme';
 import ColorModeContext from './utils/ColorModeContext';
+import getTheme from './theme/theme';
 
 const App = (): JSX.Element => {
   const [mode, setMode] = useState('dark');
