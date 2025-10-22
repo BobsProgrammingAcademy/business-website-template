@@ -4,10 +4,11 @@ import { HelmetProvider, Helmet } from 'react-helmet-async';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 
-import getTheme from './theme/theme';
-import ColorModeContext from './utils/ColorModeContext';
+// Components
 import Layout from './layout/Layout';
 import Home from './pages/Home';
+import getTheme from './theme/theme';
+import ColorModeContext from './utils/ColorModeContext';
 
 const App = (): JSX.Element => {
   const [mode, setMode] = useState('dark');
